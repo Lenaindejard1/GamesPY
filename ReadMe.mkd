@@ -1,0 +1,6 @@
+Pull the git ,
+
+Make command , pip install .
+
+Now you can run rockpaperscissors from the command line.
+

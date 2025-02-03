@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+    name = "Games"
+version = "0.1.0"
+description = "School projet Rami set cards and rockscissorpaper game."
+authors = [
+    { name = "Lenaindejard1", email = "j.eliott38@gmail.com" }
+]
+dependencies = [
+    "colorama"
+]
+
+[tool.setuptools]
+packages = ["Games", "Games.Util"]
