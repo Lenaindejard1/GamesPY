@@ -2,5 +2,5 @@ Pull the git ,
 
 Make command , pip install .
 
-Now you can run rockpaperscissors from the command line.
+Now you can use command launch from the command line.
 

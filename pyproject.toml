@@ -12,5 +12,7 @@ dependencies = [
     "colorama"
 ]
 
+[project.scripts]
+launch = "Games.__main__:play_game"
 [tool.setuptools]
 packages = ["Games", "Games.Util"]

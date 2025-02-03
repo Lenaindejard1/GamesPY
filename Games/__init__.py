@@ -1,5 +1,5 @@
 import random
-from colorama import init, Fore, Style
+from colorama import init, Fore
 
 def play_game():
     init(autoreset=True)
@@ -39,6 +39,3 @@ def play_game():
         if replay != "yes":
             print(f"Final Score - You: {user_score}, Computer: {computer_score}")
             break
-
-if __name__ == "__main__":
-    play_game()
