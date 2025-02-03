@@ -1,6 +1,20 @@
-Pull the git ,
+## Instructions pour RockPaperScissors
 
-Make command , pip install .
+### 1. Cloner le dépôt Git
+```bash
+git pull
+```
 
-Now you can run rockpaperscissors from the command line.
+### 2. Installer les dépendances
+```bash
+pip install .
+```
 
+### 3. Exécuter RockPaperScissors
+Vous pouvez maintenant lancer RockPaperScissors depuis la ligne de commande.
+
+### 4. Jouer
+Pour jouer, utilisez la commande suivante :
+```bash
+launch
+```
