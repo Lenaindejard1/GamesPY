@@ -14,5 +14,7 @@ dependencies = [
 
 [project.scripts]
 launch = "Games.__main__:play_game"
+launchRami = "Games.Rami:main"
+
 [tool.setuptools]
 packages = ["Games", "Games.Util"]

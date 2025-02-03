@@ -7,7 +7,7 @@ git pull
 
 ### 2. Installer les dépendances
 ```bash
-pip install .
+pip install -e .
 ```
 
 ### 3. Exécuter RockPaperScissors
@@ -17,4 +17,9 @@ Vous pouvez maintenant lancer RockPaperScissors depuis la ligne de commande.
 Pour jouer, utilisez la commande suivante :
 ```bash
 launch
+```
+### 4Bis. Jouer
+Pour jouer au Rami, utilisez la commande suivante :
+```bash
+launchRami
 ```

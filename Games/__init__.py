@@ -1,6 +1,9 @@
 import random
 from colorama import init, Fore
 
+from Games.Rami import JeuDeRami
+
+
 def play_game():
     init(autoreset=True)
     choices = ["rock", "paper", "scissors"]

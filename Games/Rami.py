@@ -23,3 +23,9 @@ cartes_par_joueur = 7
 jeu = JeuDeRami(noms_joueurs, cartes_par_joueur)
 jeu.paquet.afficher_nombre_paquets()
 jeu.montrer_mains()
+
+def main():
+    print("Running Rami game")
+
+if __name__ == "__main__":
+    main()
