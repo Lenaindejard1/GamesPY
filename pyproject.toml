@@ -24,8 +24,9 @@ dev = [
 launch = "Games.__main__:play_game"
 launchRami = "Games.Rami:main"
 
-[tool.setuptools]
-packages = ["Games", "Games.Util"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["Games*"]
 
 [tool.coverage.run]
 branch = true
