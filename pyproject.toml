@@ -32,6 +32,11 @@ include = ["Games*"]
 branch = true
 source = ["Games"]
 
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C90"]
+ignore = ["E501", "W503"]
+
 [tool.coverage.report]
 show_missing = true
 
