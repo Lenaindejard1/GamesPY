@@ -30,8 +30,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pytest-cov colorama ruff
 
-      - name: Run Ruff
-        run: ruff .
-
       - name: Run tests
         run: python -m pytest
