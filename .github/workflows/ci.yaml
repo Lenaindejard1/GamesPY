@@ -1,31 +1,35 @@
-name: Python CI
+name: CI
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        python-version: [3.11, 3.12]
 
     steps:
-      - name: Checkout du code
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Installer Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python-version }}
 
-      - name: Installer poetry
-        run: pip install poetry
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-cov faker
 
-      - name: Installer les dépendances
-        run: poetry install
-
-      - name: Exécuter les tests avec couverture
-        run: poetry run pytest --cov=Games Test
+      - name: Run tests
+        run: | 
+              pytest --cov=Games Test
