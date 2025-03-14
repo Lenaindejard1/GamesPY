@@ -1,15 +1,22 @@
 [build-system]
 requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "Games"
 version = "0.1.0"
-description = "School projet Rami set cards and rockscissorpaper game."
+description = "School project: Rami set cards and Rock-Paper-Scissors game."
 authors = [
     { name = "Lenaindejard1", email = "j.eliott38@gmail.com" }
 ]
 dependencies = [
     "colorama"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0"
 ]
 
 [project.scripts]
@@ -25,3 +32,6 @@ source = ["Games"]
 
 [tool.coverage.report]
 show_missing = true
+
+[tool.pytest.ini_options]
+addopts = "--cov=Games --cov-report=term-missing"
