@@ -2,7 +2,7 @@
 requires = ["setuptools", "wheel"]
 
 [project]
-    name = "Games"
+name = "Games"
 version = "0.1.0"
 description = "School projet Rami set cards and rockscissorpaper game."
 authors = [
@@ -18,3 +18,10 @@ launchRami = "Games.Rami:main"
 
 [tool.setuptools]
 packages = ["Games", "Games.Util"]
+
+[tool.coverage.run]
+branch = true
+source = ["Games"]
+
+[tool.coverage.report]
+show_missing = true

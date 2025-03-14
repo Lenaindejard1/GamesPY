@@ -1,4 +1,5 @@
 import pytest
+import coverage
 from Games.Util.Paquet import Paquet
 
 def test_calculer_nombre_paquets():
