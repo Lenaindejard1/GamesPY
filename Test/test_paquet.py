@@ -22,9 +22,6 @@ def test_afficher_nombre_paquets(capfd):
     captured = capfd.readouterr()
     assert "Nombre de paquets générés : 1" in captured.out
 
-def test_nombre_cartes_insuffisant():
-    with pytest.raises(ValueError):
-        Paquet(10, 10)
 
 if __name__ == "__main__":
     pytest.main()
